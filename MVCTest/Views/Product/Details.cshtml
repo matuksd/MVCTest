@@ -1,0 +1,21 @@
+﻿@model MVCTest.Models.ProductViewModel
+
+<h2>Product Details</h2>
+
+<div class="card p-3 mb-3">
+    <div class="row">
+        <div class="col-sm-3">Title</div>
+        <div class="col-sm-9">@Model.Title</div>
+
+        <div class="col-sm-3">Quantity</div>
+        <div class="col-sm-9">@Model.Quantity</div>
+
+        <div class="col-sm-3">Price</div>
+        <div class="col-sm-9">@Model.Price</div>
+
+        <div class="col-sm-3">Total Price with VAT</div>
+        <div class="col-sm-9">@Model.TotalPriceWithVAT</div>
+    </div>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
